@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <!-- Display -->
+        <form>
+            <div class="display">
+                <input type="text" id="display">
+            </div>
+            <div>
+                <button id="clear" onclick="clearDisplay()">Clear</button>
+                <button id="delete" onclick="backspace()">Del</button>
+                <button id="divide" onclick="appendToDisplay('/')"><span>/</span></button>
+                <button id="multiply"onclick="appendToDisplay('*')"><span>*</span></button>
+            </div>
+            <div>
+                <button id="seven" onclick="appendToDisplay('7')"><span>7</span></button>
+                <button id="eight" onclick="appendToDisplay('8')"><span>8</span></button>
+                <button id="nine" onclick="appendToDisplay('9')"><span>9</span></button>
+                <button id="subtract" onclick="appendToDisplay('-')"><span>-</span></button>
+            </div>
+            <div>
+                <button id="four" onclick="appendToDisplay('4')"><span>4</span></button>
+                <button id="five" onclick="appendToDisplay('5')"><span>5</span></button>
+                <button id="six" onclick="appendToDisplay('6')"><span>6</span></button>
+                <button id="add" onclick="appendToDisplay('+')"><span>+</span></button>
+            </div>
+            <div>
+                <button id="one" onclick="appendToDisplay('1')"><span>1</span></button>
+                <button id="two" onclick="appendToDisplay('2')"><span>2</span></button>
+                <button id="three" onclick="appendToDisplay('3')"><span>3</span></button>
+                <button id="decimal" onclick="appendToDisplay('.')"><span>.</span></button>
+            </div>
+            <div>
+                <button id="zero" class="zero" onclick="appendToDisplay('0')"><span>0</span></button>
+                <button id="equals" class="equals" onclick="evaluate()"><span>=</span></button>
+
+            </div>
+        </form>
+        </div>
+    </div>
+    <script src="cal.js"></script>
+</body>
+</html>
